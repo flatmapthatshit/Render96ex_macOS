@@ -29,7 +29,7 @@ TARGET_WEB ?= 0
 TARGET_SWITCH ?= 0
 
 # Makeflag to enable OSX fixes
-OSX_BUILD ?= 0
+export OSX_BUILD ?= 1
 
 # Specify the target you are building for, TARGET_BITS=0 means native
 TARGET_ARCH ?= native
