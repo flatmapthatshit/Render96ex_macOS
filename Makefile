@@ -35,8 +35,8 @@ export OSX_BUILD ?= 1
 TARGET_ARCH ?= native
 TARGET_BITS ?= 0
 
-# Disable texture fixes by default (helps with them purists)
-TEXTURE_FIX ?= 0
+# Enables texture fixes by default (I'm not a purist)
+TEXTURE_FIX ?= 1
 # Enable extended options menu by default
 EXT_OPTIONS_MENU ?= 1
 # Enable Discord Rich Presence
