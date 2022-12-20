@@ -1,18 +1,26 @@
 # Render96ex macOS Edition
 Fork of [Render96ex](https://github.com/Render96/Render96ex) meant to run on macOS (Intel and Apple Silicon hardware)
 
-See it running: https://video.hardlimit.com/w/qQNssYGncBKhsztPARjD6q
+https://user-images.githubusercontent.com/48256950/208743955-673658a2-6903-4efd-8359-b93711b76d5b.mp4
 
-I'll try to keep this repo reasonably up-to-date with both Render96ex tester branch and
+Higher quality video at: https://video.hardlimit.com/w/qQNssYGncBKhsztPARjD6q
+
+I'll try to keep this repo up to date with both Render96ex tester branch and
 [sm64ex](https://github.com/sm64pc/sm64ex) nightly branch, but I'm not promising anything.
 
 * If you want to help sm64ex then go to their repo.
-* If you want to help Render96ex go to their repo.
+* If you want to help Render96ex then go to their repo.
 * If you want to help here just open a PR.
 
 ## Build instructions
 
-1. Obtain a legal copy of the following Super Mario 64 ROM
+1. Clone this repo
+
+    ```
+    git clone git@github.com:flatmapthatshit/Render96ex_macOS.git
+    ```
+
+2. Obtain a legal copy of the following Super Mario 64 ROM
 
     * sm64.us.z64 `sha1: 9bef1128717f958171a4afac3ed78ee2bb4e86ce`
 
@@ -20,9 +28,9 @@ I'll try to keep this repo reasonably up-to-date with both Render96ex tester bra
    A prior copy of the game is required to extract the assets.\
    Please don't ask for a copy of the game.
 
-2. Rename the ROM to `baserom.us.z64` and place it into the repository's root directory.
+3. Rename the ROM to `baserom.us.z64` and place it into the repository's root directory.
 
-3. Install dependencies
+4. Install dependencies
 
    Install [Homebrew](https://brew.sh/) if you don't have it already:
 
@@ -38,7 +46,7 @@ I'll try to keep this repo reasonably up-to-date with both Render96ex tester bra
 
    \* Tested with GCC 12.2.0
 
-4. Build the ROM
+5. Build the ROM
 
    Use Homebrew's GNU make because the version included with macOS is too old.
 
@@ -51,16 +59,16 @@ I'll try to keep this repo reasonably up-to-date with both Render96ex tester bra
    In this repo  the flags `OSX_BUILD` and `TEXTURE_FIX` are enabled by default.
    I have only tested with `VERSION=US` (which is also the default).
 
-5. To start the game run the generated executable:
+6. To start the game run the generated executable:
     ```
     cd build/us_pc/
     ./sm64.us.f3dex2e
     ```
-6. (Optional) Combine the model pack:
+7. (Optional) Combine the model pack:
     1. Obtain the latest release of the model pack. It can be found under https://github.com/Render96/ModelPack/releases (Render96_DynOs_v3.2.7z)
     2. Extract the contents of the .7z file into `./build/us_pc/dynos/packs`
 
-7. (Optional) Combine the model pack:
+8. (Optional) Combine the texture pack:
     1. Obtain the latest version of the texture pack.
         ```
         git clone https://github.com/pokeheadroom/RENDER96-HD-TEXTURE-PACK.git -b master
@@ -77,7 +85,7 @@ https://github.com/Render96/Render96ex/wiki
   The main blocker ATM is getting https://miniaud.io/ to build under Homebrew's version of GCC.
 - [ ] Modify the build process to generate a macOS Application Bundle.\
   This is important as I haven't found a good macOS compatible launcher for Render96.\
-  I already have a solution for this, but I'm currently waiting for authorization to use some artwork.\
+  I already have a solution for this, but I'm currently waiting for authorization to use a certain icon artwork.\
   For now folks will have to make do with a solution such as https://github.com/machinebox/appify and a script like:
   ```
   #!/usr/bin/env bash
@@ -86,4 +94,4 @@ https://github.com/Render96/Render96ex/wiki
   ```
 - [x] Contribute M1 specific build fixes to https://github.com/sm64pc/sm64ex
 - [ ] Contribute relevant changes back to https://github.com/Render96/Render96ex.\
-  Definitely need to get `tester` and `tester_rt64alpha` to build for this one (`alpha` is somewhat abandoned).
+  For this one we definitely need to get `tester` and `tester_rt64alpha` to build (`alpha` is somewhat abandoned).
