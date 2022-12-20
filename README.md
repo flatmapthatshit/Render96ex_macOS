@@ -1,6 +1,8 @@
 # Render96ex macOS Edition
 Fork of [Render96ex](https://github.com/Render96/Render96ex) meant to run on macOS (Intel and Apple Silicon hardware)
 
+See it running: https://video.hardlimit.com/w/qQNssYGncBKhsztPARjD6q
+
 I'll try to keep this repo reasonably up-to-date with both Render96ex tester branch and
 [sm64ex](https://github.com/sm64pc/sm64ex) nightly branch, but I'm not promising anything.
 
