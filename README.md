@@ -81,7 +81,7 @@ https://github.com/Render96/Render96ex/wiki
 
 ## TODO (Help wanted)
 
-- [ ] Make `tester` and `tester_rt64alpha` branches.\
+- [ ] Fix `tester` and `tester_rt64alpha` branches.\
   The main blocker ATM is getting https://miniaud.io/ to build under Homebrew's version of GCC.
 - [ ] Modify the build process to generate a macOS Application Bundle.\
   This is important as I haven't found a good macOS compatible launcher for Render96.\
@@ -93,5 +93,5 @@ https://github.com/Render96/Render96ex/wiki
   ./sm64.us.f3dex2e
   ```
 - [x] Contribute M1 specific build fixes to https://github.com/sm64pc/sm64ex
-- [ ] Contribute relevant changes back to https://github.com/Render96/Render96ex.\
+- [ ] Contribute relevant changes back to https://github.com/Render96/Render96ex \
   For this one we definitely need to get `tester` and `tester_rt64alpha` to build (`alpha` is somewhat abandoned).
