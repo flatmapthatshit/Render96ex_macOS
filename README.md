@@ -59,25 +59,64 @@ I'll try to keep this repo up to date with both Render96ex tester branch and
    In this repo  the flags `OSX_BUILD` and `TEXTURE_FIX` are enabled by default.
    I have only tested with `VERSION=US` (which is also the default).
 
-6. To start the game run the generated executable:
-    ```
-    cd build/us_pc/
-    ./sm64.us.f3dex2e
-    ```
-7. (Optional) Combine the model pack:
-    1. Obtain the latest release of the model pack. It can be found under https://github.com/Render96/ModelPack/releases (Render96_DynOs_v3.2.7z)
+6. (Optional) Combine the model pack:
+    1. Obtain the latest release of the model pack. It can be found under https://github.com/Render96/ModelPack/releases
+       (Render96_DynOs_v3.2.7z)
     2. Extract the contents of the .7z file into `./build/us_pc/dynos/packs`
 
-8. (Optional) Combine the texture pack:
+7. (Optional) Combine the texture pack:
     1. Obtain the latest version of the texture pack.
         ```
         git clone https://github.com/pokeheadroom/RENDER96-HD-TEXTURE-PACK.git -b master
         ```
     2. Copy the contents of the `gfx` folder within the texture pack into `./build/us_pc/res/gfx/`
 
+8. To start the game run the generated executable:
+    ```
+    cd build/us_pc/
+    ./sm64.us.f3dex2e
+    ```
 
 ### Check Render96's wiki page for in depth help on compiling
+
 https://github.com/Render96/Render96ex/wiki
+
+## Configuration
+
+By default the game configuration file (`sm64config.txt`), DynOS config (`DynOS.1.1.alpha.config.txt`) and Save data are
+located at:
+
+```
+~/Library/Application Support/sm64ex/
+```
+
+To access the files on macOS open Finder, press `⌘` + `⇧` + `G` and paste the path above.
+
+Most settings can also be changed in-game by pressing the Start button (mapped to `Space` by default) followed by either
+L (mapped to `Right Shift`) for Game Settings or Z (mapped to `K`) for DynOS settings.
+
+To restore the default settings delete the `sm64config.txt` file.
+
+### Controls
+
+For information on default keybindings check
+[Render96's Wiki Help FAQ](https://github.com/Render96/Render96ex/wiki/Help-FAQ).
+
+You can change the keybindings by editing the `sm64config.txt` file or accessing the in-game controls menu.
+
+Here's an example in which Xbox Controller's left and right bumpers are mapped to Nintendo 64's `R` bumper, while Xbox
+Controller's left and right triggers aer mapped to `Z`.
+
+```
+key_l 002a 1104 ffff
+key_r 0036 1009 100a
+key_z 0025 101a 101b
+```
+
+### Enable the Model Pack
+
+To enable the model pack (see build instructions above), open the in-game DynOS settings, go to Model Packs and enable
+`Render96 DynOs` pack.
 
 ## TODO (Help wanted)
 
