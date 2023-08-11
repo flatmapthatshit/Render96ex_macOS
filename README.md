@@ -120,8 +120,8 @@ To enable the model pack (see build instructions above), open the in-game DynOS 
 
 ## TODO (Help wanted)
 
-- [ ] Fix `tester` and `tester_rt64alpha` branches.\
-  The main blocker ATM is getting https://miniaud.io/ to build under Homebrew's version of GCC.
+- [x] Fix `tester` and `tester_rt64alpha` branches.\
+  ~~The main blocker ATM is getting https://miniaud.io/ to build under Homebrew's version of GCC.~~
 - [ ] Modify the build process to generate a macOS Application Bundle.\
   This is important as I haven't found a good macOS compatible launcher for Render96.\
   I already have a solution for this, but I'm currently waiting for authorization to use a certain icon artwork.\
