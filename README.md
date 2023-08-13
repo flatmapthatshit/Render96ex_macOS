@@ -41,7 +41,7 @@ I'll try to keep this repo up to date with both Render96ex tester branch and
    Install the following dependencies:
     ```
     brew update
-    brew install make mingw-w64 gcc sdl2 pkg-config glew glfw3 libusb
+    brew install make mingw-w64 gcc sdl2 pkg-config glew glfw libusb
     ```
 
    \* Tested with GCC 13.1.0
@@ -105,7 +105,7 @@ For information on default keybindings check
 You can change the keybindings by editing the `sm64config.txt` file or accessing the in-game controls menu.
 
 Here's an example in which Xbox Controller's left and right bumpers are mapped to Nintendo 64's `R` bumper, while Xbox
-Controller's left and right triggers aer mapped to `Z`.
+Controller's left and right triggers are mapped to `Z`.
 
 ```
 key_l 002a 1104 ffff
