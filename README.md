@@ -44,7 +44,7 @@ I'll try to keep this repo up to date with both Render96ex tester branch and
     brew install make mingw-w64 gcc sdl2 pkg-config glew glfw libusb
     ```
 
-   \* Tested with GCC 13.1.0
+   \* Tested with GCC 14.1.0
 
 5. Build the ROM
 
