@@ -104,12 +104,12 @@ For information on default keybindings check
 
 You can change the keybindings by editing the `sm64config.txt` file or accessing the in-game controls menu.
 
-Here's an example in which Xbox Controller's left and right bumpers are mapped to Nintendo 64's `R` bumper, while Xbox
-Controller's left and right triggers are mapped to `Z`.
+Here's an example in which left and right bumpers are mapped to Nintendo 64's `R` bumper, while left and right triggers
+are mapped to `Z`.
 
 ```
-key_l 002a 1104 ffff
-key_r 0036 1009 100a
+key_l 002a 1009 1104
+key_r 0036 100a ffff
 key_z 0025 101a 101b
 ```
 
