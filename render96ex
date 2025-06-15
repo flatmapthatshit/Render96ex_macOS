@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+cd /Users/anthonyaccioly/Projects/Play/fmts/Render96ex_macOS/build/us_pc
+./sm64.us.f3dex2e
