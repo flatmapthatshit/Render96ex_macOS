@@ -17,7 +17,7 @@ I'll try to keep this repo up to date with both Render96ex tester branch and
 1. Clone this repo
 
     ```
-    git clone git@github.com:flatmapthatshit/Render96ex_macOS.git
+    git clone https://github.com/flatmapthatshit/Render96ex_macOS.git
     ```
 
 2. Obtain a legal copy of the following Super Mario 64 ROM
