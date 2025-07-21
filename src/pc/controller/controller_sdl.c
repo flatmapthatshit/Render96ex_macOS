@@ -94,6 +94,9 @@ static void controller_sdl_bind(void) {
 }
 
 static void controller_sdl_init(void) {
+    SDL_SetHint(SDL_HINT_JOYSTICK_HIDAPI_PS4_RUMBLE, "1");
+    SDL_SetHint(SDL_HINT_JOYSTICK_HIDAPI_PS5_RUMBLE, "1");
+
     if (SDL_Init(SDL_INIT_GAMECONTROLLER | SDL_INIT_EVENTS) != 0) {
         fprintf(stderr, "SDL init error: %s\n", SDL_GetError());
         return;
